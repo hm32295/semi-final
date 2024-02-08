@@ -1,0 +1,114 @@
+.main h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.shop{
+    background-color: #eee;
+    padding: 4rem 0;
+}
+.shop__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.shop__header__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.shop__header__left i{
+    font-size: 2rem;
+    
+    
+}
+.shop__header__left i:last-of-type{
+    color: var(--bg-button);
+}
+.shop select{
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding: .5rem 1rem ;
+}
+
+.shop__cards{
+    padding: 2rem 0;
+    gap: 2rem;
+}
+.shop__card{
+    padding: 1rem;
+    border-radius: .4rem;
+    text-align: center;
+    background-color: #fff;
+    width: calc((100% - 6rem) / 4);
+    cursor: pointer;
+    
+}
+.card__img{
+    position: relative;
+}
+.img__cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-button);
+    opacity: .6;
+    transition: 1s ease;
+    display: none;
+}
+.shop__card:hover .img__cover{
+    display: flex;
+}
+.shop__card img{
+    width: 100%;
+}
+@media (max-width: 991px) {
+    .shop__card {
+    width: calc((100% - 4rem) / 3);
+    }
+}
+@media (max-width: 767px) {
+    .shop__card {
+    width: calc((100% - 2rem) / 2);
+    }
+}
+@media (max-width: 540px) {
+    .shop__card {
+    width: calc((100% - 0rem) / 1);
+    }
+}
+.shop__card h2{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+}
+.shop__card h3{
+    font-size: 1.1rem;
+    color: #777;
+
+}
+.shop__card .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop__btn a{
+    background-color: var(--bg-button);
+    color: #fff !important;
+    border-radius:1rem;
+    display: block;
+    padding:.3rem 1rem;
+    text-transform: capitalize;
+
+}

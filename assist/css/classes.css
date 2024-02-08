@@ -1,0 +1,109 @@
+
+.classesDetalis{
+    padding: 5rem 0;
+}
+.classesDetalis__top{
+    margin-bottom: 3rem;
+}
+.classesDetalis__img{
+    overflow: hidden;
+    border-radius: .5rem;
+    width: 60%;
+}
+.classesDetalis__img img{
+    width: 100%;
+    object-fit: cover;
+}
+.classesDetalis__img {
+    width: 60%;
+    margin-bottom:3rem ;
+}
+.classesDetalis__info{
+    width: 30%;
+}
+@media (max-width:991px) {
+    .classesDetalis__img,.classesDetalis__info{
+        width: 100%;
+    }
+
+    
+}
+.classesDetalis__info h2{
+    text-transform: capitalize;
+}
+.classesDetalis__info span{
+
+    display: flex;
+    gap: .5rem;
+}
+.classesDetalis__info span span{
+    font-weight: 500;
+}
+
+.classesDetalis__info span p{
+    font-weight: normal;
+}
+
+.classesDetalis__discription h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.classesDetalis__discription p{
+    
+    color: #777;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+   
+}
+
+.classesDetalis__experience{
+    
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+.classesDetalis__experience >div{
+    
+    width: 100%;
+    border-radius: .3rem;
+    padding: .5rem;
+    color: #000;
+    background-color: #fff;
+}
+
+.classesDetalis__experience  div{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: .3rem var(--color-title) solid;
+    background-color: #eee;
+    margin-bottom: 1rem;
+}
+.classesDetalis__experience .classesDetalis__experience__active{
+    background-color: var(--color-title);
+    color: #fff;
+}
+
+.classesDetalis__experience h2{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.classesDetalis__experience span{
+    cursor: pointer;
+}
+.classesDetalis__experience p{
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    font-size: 1.1rem;
+    overflow: hidden;
+    animation: showPInFaqs .3s ease;
+    display: none;
+}

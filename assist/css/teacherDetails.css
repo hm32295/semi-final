@@ -1,0 +1,119 @@
+.teacherDetails{
+    padding: 5rem 0;
+}
+.teacherDetails__top {
+    width: 100%;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+.teacherDetails__top > div{
+    width: calc((100% - 2rem) /2)
+}
+@media (max-width : 991px) {
+    .teacherDetails__top > div{
+        width: 100%;
+    }
+    
+}
+.teacherDetails__top img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.teacherDetails__info {
+    background-color: #eee;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.teacherDetails__info h2{
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    
+}
+.teacherDetails__info h2::before,
+.teacherDetails__info h2::after {
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    height: .2rem;
+    bottom: 0;
+    left: 0;
+}
+.teacherDetails__info h2::after{
+    width: 5rem;
+    background-color: var(--bg-button);
+}
+.teacherDetails__info >span{
+    display: flex;
+    gap: .5rem;
+    font-weight: bold;
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.teacherDetails__info>span p{
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding-bottom: 0;
+}
+.teacherDetails__info>span p i{
+    transition: .3s ease ;
+    cursor: pointer;
+}
+.teacherDetails__info>span p i:hover {
+    color: var(--bg-button);
+}
+.teacherDetails__info>span:last-of-type p{
+    margin-bottom: 0;
+}
+.teacherDetails__bottem{
+    text-transform: capitalize;
+    color: #444;
+}
+.teacherDetails__bottem h2{
+    color: #000;
+    margin-bottom: 1.2rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+}
+.teacherDetails__bottem p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+}
+.teacherDetails__bottem p.last__p{
+
+    margin: 3rem 0 ;
+}
+
+.teacherDetails__progress {
+    margin-bottom: 1.5rem;
+
+}
+.teacherDetails__progress > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.teacherDetails__progress__progress{
+    position: relative;
+    background-color: #eee;
+    height: .2rem;
+    width: 100%;
+    display: block;
+}
+.teacherDetails__progress__progress span{
+    width: 80%;
+    background-color: var(--bg-button);
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
